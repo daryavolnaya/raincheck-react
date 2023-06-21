@@ -1,0 +1,47 @@
+.Weather {
+    max-width: 700px;
+}
+
+
+.above {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    text-align: center;
+}
+
+.temperature {
+    font-size: 46px;
+}
+
+img {
+    max-width: 75px;
+}
+
+.icon {
+    padding-top: 10px;
+
+}
+
+.description {
+    padding-top: 7px;
+}
+
+.main-content {
+    padding-top: 20px;
+    background-image: url(https://images.unsplash.com/photo-1616864202566-fbc4c67e2174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: 700px;
+    height: 300px;
+
+}
+
+.current-weather {
+    padding-left: 13px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style-type: none;
+}
