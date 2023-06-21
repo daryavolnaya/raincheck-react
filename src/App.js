@@ -7,6 +7,9 @@ export default function App() {
       <header className="App-header">
         RainCheck Weather app
       </header>
+      <footer>
+        This project was coded by <a href="https://github.com/daryavolnaya" target="_blank" rel="noreferrer">Daria Romaniuk</a>, and it is <a href="https://github.com/daryavolnaya/raincheck-react" target="_blank" rel="noreferrer">open-sourced</a> 
+      </footer>
     </div>
   );
 }
