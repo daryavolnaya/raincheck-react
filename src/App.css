@@ -1,8 +1,25 @@
 .container {
     padding: 50px;
-    max-width: 720px;
+    max-width: 820px;
     margin-top: 50px;
     color: white;
-    background-image: url(https://images.unsplash.com/photo-1616864202566-fbc4c67e2174?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
-    background-size: 900px;
+    background-image: url(https://images.unsplash.com/photo-1553623451-e80b096d386a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80);
+    background-size: 950px;
+}
+
+footer {
+    backdrop-filter: blur(9px);
+    padding: 10px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+
+}
+
+a:hover {
+    text-decoration: underline;
+
 }
