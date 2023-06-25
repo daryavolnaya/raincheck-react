@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 import "./Weather.css";
@@ -6,7 +7,6 @@ import "./Weather.css";
 export default function Weather (props){
 const [weatherData, setWeatherData] = useState({ready:false});
   function handleResponse(response){
-    console.log(response.data);
     setWeatherData({
       ready:true,
       temperature: Math.round(response.data.main.temp),
@@ -15,9 +15,7 @@ const [weatherData, setWeatherData] = useState({ready:false});
       wind: Math.round(response.data.wind.speed),
       city: response.data.name,
       description: response.data.weather[0].description,
-      time: "14:24",
-      weekday: "Sun",
-      date: "JUN 21",
+      date: new Date(response.data.dt * 1000),
     })
   }
 
@@ -39,12 +37,8 @@ const [weatherData, setWeatherData] = useState({ready:false});
           <li className="temperature">
         {weatherData.temperature}ºC
         </li>
-         <li>
-        {weatherData.weekday} / {weatherData.date}
-        </li>
-         <li>
-        {weatherData.time}
-        </li>
+        <FormattedDate date={weatherData.date}/>
+       
         </ul>
         </div>
       <div className="col-2 icon"> 
