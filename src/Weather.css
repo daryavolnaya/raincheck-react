@@ -12,7 +12,13 @@
 }
 
 .temperature {
-    font-size: 46px;
+    font-size: 40px;
+
+}
+
+.unit {
+    position: relative;
+    top: -18px;
 }
 
 img {
