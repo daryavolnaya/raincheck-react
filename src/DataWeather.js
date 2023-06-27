@@ -16,7 +16,7 @@ export default function DataWeather(props){
       <div className="col-2 icon"> 
       <ul>
           <li>
-             <img src="https://static-00.iconduck.com/assets.00/partly-cloudy-icon-2048x2017-zr2ino3n.png" alt="partly cloudy"/>
+             <img src={props.data.iconUrl} alt={props.data.description}/>
         </li>
         <li className="description text-capitalize">
         {props.data.description}
