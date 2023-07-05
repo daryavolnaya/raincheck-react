@@ -1,5 +1,5 @@
 .Weather {
-    max-width: 800px;
+    max-width: 1000px;
 
 }
 
@@ -8,6 +8,7 @@
     background-color: rgba(249, 249, 249, 0.2);
     color: white;
     text-align: center;
+    backdrop-filter: blur(4px);
 
 }
 
@@ -25,19 +26,20 @@ img {
     max-width: 80px;
 }
 
-.icon {
-    padding-top: 10px;
 
+.weather {
+    padding-top: 17px;
 }
 
 .description {
-    padding-top: 7px;
+    font-size: 15px;
+    text-align: center;
 }
 
 .main-content {
     padding-top: 20px;
     background-image: url(https://images.unsplash.com/photo-1631618398019-e43a99fc37f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80);
-    background-size: 800px;
+    background-size: 950px;
     height: 300px;
 
 }

@@ -1,14 +1,15 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherTemperature from "./WeatherTemperature";
+import Forecast from "./Forecast";
+
 
 export default function DataWeather(props){
     return <div className="">
         <div className="row above">
-      <div className="col-3">
+      <div className="col-2 weather">
         <ul>
           <WeatherTemperature celsius={props.data.temperature}/>
-          
         <FormattedDate date={props.data.date}/>
        
         </ul>
@@ -23,6 +24,8 @@ export default function DataWeather(props){
         </li>
         </ul>
         </div>
+        <div className="col-8"><Forecast coordinates={props.data.coordinates} /></div>
+        
     </div>
     <div className="row main-content">
       <div className="col-7">

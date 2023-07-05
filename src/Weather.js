@@ -4,12 +4,15 @@ import axios from "axios";
 import "./Weather.css";
 import DataWeather from "./DataWeather";
 
+
 export default function Weather (props){
+  
   const [city, setCity] = useState(props.defaultCity);
 const [weatherData, setWeatherData] = useState({ready:false});
   function handleResponse(response){
     setWeatherData({
       ready:true,
+      coordinates: response.data.coord,
       temperature: Math.round(response.data.main.temp),
       feelsLike: Math.round(response.data.main.feels_like),
       humidity: response.data.main.humidity,
@@ -47,6 +50,7 @@ setCity(event.target.value)
     </div>
 </form>
 <DataWeather data={weatherData}/>
+
     
     </div>);
   } else {
