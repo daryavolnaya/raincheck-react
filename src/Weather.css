@@ -17,9 +17,10 @@
 
 }
 
-.unit {
+.celsius {
+    font-size: 20px;
     position: relative;
-    top: -18px;
+    top: -15px;
 }
 
 img {
@@ -34,6 +35,12 @@ img {
 
 .weather {
     padding-top: 17px;
+}
+
+.main-icon:hover,
+.weather:hover,
+.cityWeather:hover {
+    text-shadow: 0 0 10px rgb(122, 72, 248), 0 0 20px rgb(248, 151, 72), 0 0 30px rgb(248, 151, 72), 0 0 40px rgb(248, 151, 72);
 }
 
 .city {
