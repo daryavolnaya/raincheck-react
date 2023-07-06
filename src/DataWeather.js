@@ -30,7 +30,7 @@ export default function DataWeather(props){
     </div>
     <div className="row main-content">
       <div className="col m-lg-5">
-    <h2>📍 {props.data.city}</h2>
+    <h2 className="city">📍 {props.data.city}</h2>
     <ul className="current-weather">
       <li>Humidity: {props.data.humidity}%</li>
       <li>Wind {props.data.wind} m/s</li>

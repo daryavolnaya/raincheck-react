@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import "./Forecast.css";
+import React, {useState, useEffect} from "react";
+import "./HourlyForecast.css";
 import axios from "axios";
 import WeatherForecastTime from "./WeatherForecastTime";
 
@@ -9,20 +9,24 @@ export default function HourlyForecast(props){
 
   let [loaded, setLoaded] = useState(false);
   let [forecastData, setForecastData] = useState(null);
+
+    useEffect(() => {
+    setLoaded(false);
+  }, [props.coordinates]);
+
 function handleResponse (response) {
-  console.log(response);
  setForecastData(response.data.hourly);
  setLoaded(true);
 }
 
     if (loaded) {
       return (
-        <div className="Forecast">
+        <div className="HourlyForecast">
           <div className="row">
 {/* eslint-disable-next-line */}
             {forecastData.map(function(timeForecast, index) {
 
-              if (index > 0 && index < 5) {
+              if (index > 1 && index < 6) {
             return (
               <div className="col" key={index}>
             <WeatherForecastTime data={timeForecast}/>

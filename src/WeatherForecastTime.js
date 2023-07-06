@@ -33,9 +33,8 @@ function time(){
   return hours[hour];
 }
 
-  function maxTemperature(){
-    let temperature = Math.round(
-        props.data.weather[0].temp)
+  function temperature(){
+    let temperature = Math.round(props.data.temp)
     
     return `${temperature}º`;
   }
@@ -45,7 +44,7 @@ return (
 
               <div className="Forecast-time">{time()}</div>
              <div className="Forecast-icon"> <img src={`https://openweathermap.org/img/wn/${props.data.weather[0].icon}@2x.png`} alt="icon"/></div>
-              <span className="Forecast-temperature">{maxTemperature()} </span>
+              <span className="Forecast-temperature">{temperature()} </span>
              
            
             </div>
