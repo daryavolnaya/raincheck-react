@@ -1,6 +1,12 @@
 .Forecast {
     text-align: center;
     font-size: 17px;
+    margin-top: 40px;
+}
+
+.Forecast .col:hover {
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .Forecast-temperature-min {

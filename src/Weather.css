@@ -26,6 +26,11 @@ img {
     max-width: 80px;
 }
 
+.mainIcon {
+    padding-top: 5px;
+    max-width: 120px;
+}
+
 
 .weather {
     padding-top: 17px;
