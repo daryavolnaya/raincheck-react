@@ -20,7 +20,7 @@ function handleResponse (response) {
 
     if (loaded) {
       return (
-        <div className="Forecast">
+        <div className="Forecast container-sm">
           <div className="row">
 {/* eslint-disable-next-line */}
             {forecastData.map(function(dailyForecast, index) {

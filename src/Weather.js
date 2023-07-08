@@ -38,13 +38,13 @@ setCity(event.target.value)
   }
 
   if (weatherData.ready){
-	return (<div className="Weather">
+	return (<div className="Weather container-sm">
     <form className="mb-2" onSubmit={handleSubmit}>
       <div className="row">
-        <div className="col-9">
+        <div className="col-sm-9">
     <input type="search" placeholder="enter a city..." className="form-control" autoFocus="on" onChange={handleCityChange}></input>
    </div>
-    <div className="col-3">
+    <div className="col-sm-3">
     <input type="submit" value="Search" className="btn btn-dark w-100"/>
     </div>
     </div>

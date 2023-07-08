@@ -7,7 +7,7 @@ export default function App() {
   return (
     <div className="App">
       
-      <div className="container">
+      <div className="box container-sm">
      
       <header className="App-header">
       </header>

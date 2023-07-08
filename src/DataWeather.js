@@ -4,7 +4,8 @@ import Forecast from "./Forecast";
 import HourlyForecast from "./HourlyForecast";
 
 export default function DataWeather(props){
-    return <div className="">
+    return <div className="container-sm">
+      <div className="container-sm">
         <div className="row above">
       <div className="col-2 weather">
         <ul>
@@ -28,9 +29,10 @@ export default function DataWeather(props){
         </div>
       
         <div className="col-8"><HourlyForecast coordinates={props.data.coordinates} /></div>
-        
+        </div>
     </div>
-    <div className="row main-content">
+    <div className="container-sm main-content">
+    <div className="row ">
       <div className="col m-lg-5 cityWeather">
     <h2 className="city">📍 {props.data.city}</h2>
     <ul className="current-weather">
@@ -41,5 +43,6 @@ export default function DataWeather(props){
     </div>
     <div className="col-8"><Forecast coordinates={props.data.coordinates} /></div>
 	</div>
+  </div>
     </div>
 }
